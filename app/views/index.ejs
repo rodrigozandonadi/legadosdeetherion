@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Legados Perdidos de Etherion</title>
+        <meta charset="utf-8" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <h1>Legados Perdidos de Etherion</h1>
+                <% for(var i = 0; i < livro.length; i++){ %>
+                <div class="col-md-4">
+                    <h3><%= livro[i].titulo %></h3>
+                    <p><%= livro[i].p1 %></p>
+                    <p><%= livro[i].p2 %></p>
+                    <p><%= livro[i].p3 %></p>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        
+        <!-- JQuery -->
+        <script src="jquery/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
